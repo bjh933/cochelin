@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <div class="container">
+    <%= yield %>
+  </div>
+  
+  <!--개발환경일때만 콘솔창 띄우게 하는 코드-->
+  <%# if Rails.env.development? %>
+  <%#= console %>
+  <%# end %>
+  
+  <!--더 짧게 줄여서 이렇게 코드를 쓸 수 있다-->
+  <%= console if Rails.env.development? %>
+  
 </body>
 </html>

@@ -10,6 +10,8 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ 
+ *주석에 = 처리가 되어있으면 코드를 읽어주게 해주는 gem이 있다 sprockets-rails
  *= require_tree .
  *= require_self
  */
